@@ -1,0 +1,63 @@
+/* awal */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* bagian parent section */
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+/* bagian tag video */
+section video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* bagian section navigator */
+section .navigation {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* bagian section li */
+section .navigation li {
+  list-style: none;
+  cursor: pointer;
+  margin: 0 10px;
+  border-radius: 4px;
+  background-color: white;
+  padding: 3px 3px 0;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+/* ubah opacity ketika di hover */
+section .navigation li:hover {
+  opacity: 1;
+}
+
+/* mengatur besar gambar thumbnail */
+section .navigation li img {
+  width: 120px;
+  transition: 0.5s;
+}
+
+/* merubah besar gambar ketika di hover */
+section .navigation li img:hover {
+  width: 200px;
+}
